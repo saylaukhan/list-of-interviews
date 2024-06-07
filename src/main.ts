@@ -13,6 +13,10 @@ import Toast from 'primevue/toast'
 import ToastService from 'primevue/toastservice'
 import ProgressSpinner from 'primevue/progressspinner'
 import Card from 'primevue/card'
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
+import InlineMessage from 'primevue/inlinemessage'
+
 import { createApp } from 'vue'
 
 import App from './app/App.vue'
@@ -40,5 +44,8 @@ app.component('app-input-text', InputText)
 app.component('app-toast', Toast)
 app.component('app-progress', ProgressSpinner)
 app.component('app-card', Card)
+app.component('app-data-table', DataTable)
+app.component('app-column', Column)
+app.component('app-message', InlineMessage)
 
 app.mount('#app')
