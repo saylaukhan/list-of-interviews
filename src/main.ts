@@ -16,6 +16,10 @@ import Card from 'primevue/card'
 import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
 import InlineMessage from 'primevue/inlinemessage'
+import InputNumber from 'primevue/inputnumber'
+import Textarea from 'primevue/textarea'
+import Calendar from 'primevue/calendar'
+import Radio from 'primevue/radiobutton'
 
 import { createApp } from 'vue'
 
@@ -47,5 +51,9 @@ app.component('app-card', Card)
 app.component('app-data-table', DataTable)
 app.component('app-column', Column)
 app.component('app-message', InlineMessage)
+app.component('app-input-number', InputNumber)
+app.component('app-textarea', Textarea)
+app.component('app-calendar', Calendar)
+app.component('app-radio', Radio)
 
 app.mount('#app')
