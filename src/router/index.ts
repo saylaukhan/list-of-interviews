@@ -1,5 +1,5 @@
-import type { NavigationGuardNext, RouteLocationNormalized, RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHistory } from 'vue-router'
+import type { RouteRecordRaw, RouteLocationNormalized, NavigationGuardNext } from 'vue-router'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 
 const checkAuth = (
@@ -20,7 +20,7 @@ const checkAuth = (
   })
 }
 
-const routes: RouteRecordRaw = [
+const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Home',
